@@ -6,3 +6,149 @@ Note: For our purposes here, a letter is a-z, A-Z, and the bytes from 128 throug
 
 Note: $this is a special variable that can't be assigned. Prior to PHP 7.1.0, indirect assignment (e.g. by using variable variables) was possible.
 
+Predefined Classes:
+This section lists standard predefined classes. Miscellaneous extensions define other classes which are described in their reference.
+
+Standard Defined Classes:
+These classes are defined in the standard set of functions included in the PHP build.
+
+Directory
+Created by dir().
+stdClass
+A generic empty class created as a result of typecasting to object or various standard functions.
+__PHP_Incomplete_Class
+Possibly created by unserialize().
+Exception
+ErrorException
+php_user_filter
+Closure
+The predefined final class Closure is used for representing anonymous functions.
+Generator
+The predefined final class Generator is used for representing generators.
+ArithmeticError
+AssertionError
+DivisionByZeroError
+Error
+Throwable
+ParseError
+TypeError
+-----------------
+Special classes :
+Following identifiers may not be used as a class name as they have special purpose.
+
+self
+Current class.
+static
+Current class in runtime.
+parent
+Parent class.
+----------------
+Predefined Constants ¶
+Core Predefined Constants ¶
+These constants are defined by the PHP core. This includes PHP, the Zend engine, and SAPI modules.
+
+PHP_VERSION (string)
+The current PHP version as a string in "major.minor.release[extra]" notation.
+PHP_MAJOR_VERSION (int)
+The current PHP "major" version as an integer (e.g., int(5) from version "5.2.7-extra").
+PHP_MINOR_VERSION (int)
+The current PHP "minor" version as an integer (e.g., int(2) from version "5.2.7-extra").
+PHP_RELEASE_VERSION (int)
+The current PHP "release" version as an integer (e.g., int(7) from version "5.2.7-extra").
+PHP_VERSION_ID (int)
+The current PHP version as an integer, useful for version comparisons (e.g., int(50207) from version "5.2.7-extra").
+PHP_EXTRA_VERSION (string)
+The current PHP "extra" version as a string (e.g., '-extra' from version "5.2.7-extra"). Often used by distribution vendors to indicate a package version.
+PHP_ZTS (int)
+PHP_DEBUG (int)
+PHP_MAXPATHLEN (int)
+The maximum length of filenames (including path) supported by this build of PHP.
+PHP_OS (string)
+The operating system PHP was built for.
+PHP_OS_FAMILY (string)
+The operating system family PHP was built for. One of 'Windows', 'BSD', 'Darwin', 'Solaris', 'Linux' or 'Unknown'. Available as of PHP 7.2.0.
+PHP_SAPI (string)
+The Server API for this build of PHP. See also php_sapi_name().
+PHP_EOL (string)
+The correct 'End Of Line' symbol for this platform.
+PHP_INT_MAX (int)
+The largest integer supported in this build of PHP. Usually int(2147483647) in 32 bit systems and int(9223372036854775807) in 64 bit systems.
+PHP_INT_MIN (int)
+The smallest integer supported in this build of PHP. Usually int(-2147483648) in 32 bit systems and int(-9223372036854775808) in 64 bit systems. Usually, PHP_INT_MIN === ~PHP_INT_MAX.
+PHP_INT_SIZE (int)
+The size of an integer in bytes in this build of PHP.
+PHP_FLOAT_DIG (int)
+Number of decimal digits that can be rounded into a float and back without precision loss. Available as of PHP 7.2.0.
+PHP_FLOAT_EPSILON (float)
+Smallest representable positive number x, so that x + 1.0 != 1.0. Available as of PHP 7.2.0.
+PHP_FLOAT_MIN (float)
+Smallest representable positive floating point number. If you need the smallest representable negative floating point number, use - PHP_FLOAT_MAX. Available as of PHP 7.2.0.
+PHP_FLOAT_MAX (float)
+Largest representable floating point number. Available as of PHP 7.2.0.
+DEFAULT_INCLUDE_PATH (string)
+PEAR_INSTALL_DIR (string)
+PEAR_EXTENSION_DIR (string)
+PHP_EXTENSION_DIR (string)
+The default directory where to look for dynamically loadable extensions (unless overridden by extension_dir). Defaults to PHP_PREFIX (or PHP_PREFIX . "\\ext" on Windows).
+PHP_PREFIX (string)
+The value --prefix was set to at configure. On Windows, it is the value --with-prefix was set to at configure.
+PHP_BINDIR (string)
+The value --bindir was set to at configure. On Windows, it is the value --with-prefix was set to at configure.
+PHP_BINARY (string)
+Specifies the PHP binary path during script execution.
+PHP_MANDIR (string)
+Specifies where the manpages were installed into.
+PHP_LIBDIR (string)
+PHP_DATADIR (string)
+PHP_SYSCONFDIR (string)
+PHP_LOCALSTATEDIR (string)
+PHP_CONFIG_FILE_PATH (string)
+PHP_CONFIG_FILE_SCAN_DIR (string)
+PHP_SHLIB_SUFFIX (string)
+The build-platform's shared library suffix, such as "so" (most Unixes) or "dll" (Windows).
+PHP_FD_SETSIZE (string)
+The maximum number of file descriptors for select system calls. Available as of PHP 7.1.0.
+E_ERROR (int)
+ 
+E_WARNING (int)
+ 
+E_PARSE (int)
+ 
+E_NOTICE (int)
+ 
+E_CORE_ERROR (int)
+ 
+E_CORE_WARNING (int)
+ 
+E_COMPILE_ERROR (int)
+ 
+E_COMPILE_WARNING (int)
+ 
+E_USER_ERROR (int)
+ 
+E_USER_WARNING (int)
+ 
+E_USER_NOTICE (int)
+ 
+E_RECOVERABLE_ERROR (int)
+ 
+E_DEPRECATED (int)
+ 
+E_USER_DEPRECATED (int)
+
+E_ALL (int)
+
+E_STRICT (int)
+ 
+__COMPILER_HALT_OFFSET__ (int)
+true (bool)
+See Booleans.
+false (bool)
+See Booleans.
+null (null)
+See Null.
+PHP_WINDOWS_EVENT_CTRL_C (int)
+A Windows CTRL+C event. Available as of PHP 7.4.0 (Windows only).
+PHP_WINDOWS_EVENT_CTRL_BREAK (int)
+A Windows CTRL+BREAK event. Available as of PHP 7.4.0 (Windows only).
+See also: Magic constants.
